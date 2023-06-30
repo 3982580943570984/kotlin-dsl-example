@@ -2,7 +2,7 @@ fun main() {
   val olympiads = olympiads {
     olympiad {
       name = "Math Olympiad"
-      date = "2022-03-15"
+      date = 3 July 2012
       institution = "ABC School"
       participant {
         name = "John"
@@ -17,7 +17,7 @@ fun main() {
     }
     olympiad {
       name = "Science Olympiad"
-      date = "2022-05-20"
+      date = 20 January 2004
       institution = "XYZ School"
       participant {
         name = "Tom"

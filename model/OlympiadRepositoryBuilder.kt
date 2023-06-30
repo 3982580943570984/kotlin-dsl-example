@@ -9,5 +9,10 @@ class OlympiadRepositoryBuilder {
   fun build(): OlympiadRepository = OlympiadRepository(olympiads)
 }
 
-fun olympiads(block: OlympiadRepositoryBuilder.() -> Unit): OlympiadRepository = OlympiadRepositoryBuilder().apply(block).build()
-
+fun olympiads(block: context(DateContext) OlympiadRepositoryBuilder.() -> Unit): OlympiadRepository {
+  val olympiadRepositoryBuilder = OlympiadRepositoryBuilder()
+  with (DateContext) {
+    block(olympiadRepositoryBuilder)
+  }
+  return olympiadRepositoryBuilder.build()
+}

@@ -1,6 +1,8 @@
+import java.time.LocalDate
+
 class OlympiadBuilder {
   var name: String = ""
-  var date: String = ""
+  var date: LocalDate = LocalDate.now()
   var institution: String = ""
   var participants: MutableList<Participant> = mutableListOf()
 
@@ -9,7 +11,7 @@ class OlympiadBuilder {
     return this
   }
 
-  fun withDate(date: String): OlympiadBuilder {
+  fun withDate(date: LocalDate): OlympiadBuilder {
     this.date = date
     return this
   }
