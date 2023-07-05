@@ -99,4 +99,10 @@ fun main() {
   println(olympiads.findByName("Math Olympiad"))
   println(olympiads.findByInstitution("XYZ School"))
   println(olympiads.findParticipantWithMaxScore())
+
+  println(OlympiadTest().testMathOlympiadExists())
+  println(OlympiadTest().testNumberOfOlympiads())
+  println(OlympiadTest().testChemistryOlympiadScores())
+  println(OlympiadTest().testHistoryOlympiadInLMNSchool())
+  println(OlympiadTest().testEnglishOlympiadDate())
 }
